@@ -7,160 +7,107 @@ CREATE DATABASE perfulandia_notificacion_01v;
 
 
 
--- Usuario
+-- 🧑‍💼 Usuarios en perfulandia_usuarios_01v.usuario
+INSERT INTO perfulandia_usuarios_01v.usuario (correo, nombre, rol) VALUES
+('carla.rojas@gmail.com', 'Carla Rojas', 'ADMIN'),
+('pedro.morales@yahoo.com', 'Pedro Morales', 'GERENTE'),
+('lucia.diaz@hotmail.com', 'Lucía Díaz', 'Usuario'),
+('marco.vera@gmail.com', 'Marco Vera', 'Usuario'),
+('ana.espinoza@gmail.com', 'Ana Espinoza', 'GERENTE'),
+('sebastian.torres@gmail.com', 'Sebastián Torres', 'Usuario'),
+('valentina.nunez@gmail.com', 'Valentina Núñez', 'Usuario'),
+('ignacio.soto@gmail.com', 'Ignacio Soto', 'GERENTE'),
+('fernanda.reyes@gmail.com', 'Fernanda Reyes', 'Usuario'),
+('camila.fuentes@gmail.com', 'Camila Fuentes', 'Usuario');
 
-INSERT INTO Usuario (nombre, correo, rol) VALUES ('Ana Torres', 'ana.torres@example.com', 'ADMIN');
-INSERT INTO Usuario (nombre, correo, rol) VALUES ('Luis Perez', 'luis.perez@example.com', 'Usuario');
-INSERT INTO Usuario (nombre, correo, rol) VALUES ('María Gómez', 'maria.gomez@example.com', 'GERENTE');
-INSERT INTO Usuario (nombre, correo, rol) VALUES ('Carlos Ruiz', 'carlos.ruiz@example.com', 'Usuario');
-INSERT INTO Usuario (nombre, correo, rol) VALUES ('Elena Rivas', 'elena.rivas@example.com', 'ADMIN');
-INSERT INTO Usuario (nombre, correo, rol) VALUES ('Roberto Díaz', 'roberto.diaz@example.com', 'Usuario');
-INSERT INTO Usuario (nombre, correo, rol) VALUES ('Lucía Herrera', 'lucia.herrera@example.com', 'GERENTE');
-INSERT INTO Usuario (nombre, correo, rol) VALUES ('Pedro Morales', 'pedro.morales@example.com', 'Usuario');
-INSERT INTO Usuario (nombre, correo, rol) VALUES ('Carmen Soto', 'carmen.soto@example.com', 'GERENTE');
-INSERT INTO Usuario (nombre, correo, rol) VALUES ('Jorge Campos', 'jorge.campos@example.com', 'Usuario');
-INSERT INTO Usuario (nombre, correo, rol) VALUES ('Sara Vidal', 'sara.vidal@example.com', 'ADMIN');
-INSERT INTO Usuario (nombre, correo, rol) VALUES ('Andrés Ortega', 'andres.ortega@example.com', 'GERENTE');
-INSERT INTO Usuario (nombre, correo, rol) VALUES ('Marta López', 'marta.lopez@example.com', 'Usuario');
-INSERT INTO Usuario (nombre, correo, rol) VALUES ('Diego Navarro', 'diego.navarro@example.com', 'Usuario');
-INSERT INTO Usuario (nombre, correo, rol) VALUES ('Patricia Vega', 'patricia.vega@example.com', 'GERENTE');
-INSERT INTO Usuario (nombre, correo, rol) VALUES ('Raúl Santana', 'raul.santana@example.com', 'Usuario');
-INSERT INTO Usuario (nombre, correo, rol) VALUES ('Claudia Méndez', 'claudia.mendez@example.com', 'ADMIN');
-INSERT INTO Usuario (nombre, correo, rol) VALUES ('Oscar Gil', 'oscar.gil@example.com', 'Usuario');
-INSERT INTO Usuario (nombre, correo, rol) VALUES ('Isabel Ramos', 'isabel.ramos@example.com', 'GERENTE');
-INSERT INTO Usuario (nombre, correo, rol) VALUES ('Hugo Paredes', 'hugo.paredes@example.com', 'Usuario');
-INSERT INTO Usuario (nombre, correo, rol) VALUES ('Julia Naranjo', 'julia.naranjo@example.com', 'ADMIN');
-INSERT INTO Usuario (nombre, correo, rol) VALUES ('Victor Salas', 'victor.salas@example.com', 'GERENTE');
-INSERT INTO Usuario (nombre, correo, rol) VALUES ('Laura Peña', 'laura.pena@example.com', 'Usuario');
-INSERT INTO Usuario (nombre, correo, rol) VALUES ('Ricardo Aguirre', 'ricardo.aguirre@example.com', 'Usuario');
-INSERT INTO Usuario (nombre, correo, rol) VALUES ('Teresa Medina', 'teresa.medina@example.com', 'GERENTE');
-INSERT INTO Usuario (nombre, correo, rol) VALUES ('Francisco León', 'francisco.leon@example.com', 'Usuario');
-INSERT INTO Usuario (nombre, correo, rol) VALUES ('Natalia Roldán', 'natalia.roldan@example.com', 'ADMIN');
-INSERT INTO Usuario (nombre, correo, rol) VALUES ('Sebastián Molina', 'sebastian.molina@example.com', 'Usuario');
-INSERT INTO Usuario (nombre, correo, rol) VALUES ('Beatriz Castillo', 'beatriz.castillo@example.com', 'GERENTE');
-INSERT INTO Usuario (nombre, correo, rol) VALUES ('Álvaro Duarte', 'alvaro.duarte@example.com', 'Usuario');
-INSERT INTO Usuario (nombre, correo, rol) VALUES ('Daniela Lozano', 'daniela.lozano@example.com', 'GERENTE');
-INSERT INTO Usuario (nombre, correo, rol) VALUES ('Gabriel Ramos', 'gabriel.ramos@example.com', 'Usuario');
-INSERT INTO Usuario (nombre, correo, rol) VALUES ('Rosa Calderón', 'rosa.calderon@example.com', 'ADMIN');
-INSERT INTO Usuario (nombre, correo, rol) VALUES ('Iván Castaño', 'ivan.castano@example.com', 'Usuario');
-INSERT INTO Usuario (nombre, correo, rol) VALUES ('Lorena Espinoza', 'lorena.espinoza@example.com', 'GERENTE');
-INSERT INTO Usuario (nombre, correo, rol) VALUES ('Miguel Arias', 'miguel.arias@example.com', 'Usuario');
-INSERT INTO Usuario (nombre, correo, rol) VALUES ('Nuria Fuentes', 'nuria.fuentes@example.com', 'GERENTE');
-INSERT INTO Usuario (nombre, correo, rol) VALUES ('Felipe Carrillo', 'felipe.carrillo@example.com', 'Usuario');
-INSERT INTO Usuario (nombre, correo, rol) VALUES ('Noelia Marín', 'noelia.marin@example.com', 'ADMIN');
-INSERT INTO Usuario (nombre, correo, rol) VALUES ('Tomás Ibáñez', 'tomas.ibanez@example.com', 'Usuario');
-INSERT INTO Usuario (nombre, correo, rol) VALUES ('Eva Bautista', 'eva.bautista@example.com', 'GERENTE');
-INSERT INTO Usuario (nombre, correo, rol) VALUES ('Samuel Vargas', 'samuel.vargas@example.com', 'Usuario');
-INSERT INTO Usuario (nombre, correo, rol) VALUES ('Adriana Ferrer', 'adriana.ferrer@example.com', 'GERENTE');
-INSERT INTO Usuario (nombre, correo, rol) VALUES ('Manuel Sáenz', 'manuel.saenz@example.com', 'Usuario');
-INSERT INTO Usuario (nombre, correo, rol) VALUES ('Rebeca Domínguez', 'rebeca.dominguez@example.com', 'ADMIN');
-INSERT INTO Usuario (nombre, correo, rol) VALUES ('Alba Méndez', 'alba.mendez@example.com', 'Usuario');
-INSERT INTO Usuario (nombre, correo, rol) VALUES ('Ignacio Bravo', 'ignacio.bravo@example.com', 'GERENTE');
-INSERT INTO Usuario (nombre, correo, rol) VALUES ('Monica Cano', 'monica.cano@example.com', 'Usuario');
-INSERT INTO Usuario (nombre, correo, rol) VALUES ('David Cortés', 'david.cortes@example.com', 'GERENTE');
+-- 🧴 Productos en perfulandia_productos_01v.producto
+INSERT INTO perfulandia_productos_01v.producto (nombre, precio, stock) VALUES
+('Perfume Aqua', 19990, 25),
+('Loción Midnight', 14990, 30),
+('Spray Cítrico', 9990, 40),
+('Fragancia Rosé', 17990, 15),
+('Crema Corporal', 12990, 35),
+('Set Aromaterapia', 24990, 20),
+('Perfume Intense', 21990, 18),
+('Bruma Lavanda', 10990, 45),
+('Aceite Esencial', 13990, 28),
+('Set Spa', 26990, 12),
+('Perfume Black', 18990, 33),
+('Spray Frutal', 8990, 50),
+('Loción Floral', 15990, 22),
+('Fragancia Natural', 11990, 38),
+('Jabón de Coco', 7990, 60),
+('Gel de Ducha', 8990, 42),
+('Velas Aromáticas', 15990, 17),
+('Manteca Corporal', 13990, 25),
+('Perfume Amaderado', 22990, 19),
+('Crema de Manos', 6990, 55);
 
+-- 📦 Pedidos en perfulandia_productos_01v.pedido (hereda usuario_id desde notificación)
+INSERT INTO perfulandia_pedido_01v.pedido (cantidad, descripcion, estado, producto_id, total, usuario_id) VALUES
+(2, 'Compra de spray cítrico', 'PENDIENTE', 3, 19980, 1),
+(1, 'Perfume Aqua exclusivo', 'ENVIADO', 1, 19990, 2),
+(3, 'Crema corporal para regalo', 'ENTREGADO', 5, 38970, 3),
+(1, 'Set spa no disponible', 'CANCELADO', 10, 26990, 4),
+(2, 'Loción para hombre', 'ENTREGADO', 2, 29980, 5),
+(4, 'Brumas lavanda para spa', 'PENDIENTE', 8, 43960, 6),
+(1, 'Fragancia rosé nueva colección', 'ENTREGADO', 4, 17990, 7),
+(2, 'Set aromaterapia', 'ENVIADO', 6, 49980, 8),
+(1, 'Perfume intense para regalo', 'PENDIENTE', 7, 21990, 9),
+(2, 'Aceite esencial corporal', 'ENTREGADO', 9, 27980, 10),
+(2, 'Perfume black edición limitada', 'ENTREGADO', 11, 37980, 1),
+(3, 'Spray frutal x3', 'PENDIENTE', 12, 26970, 2),
+(1, 'Loción floral día de la madre', 'ENTREGADO', 13, 15990, 3),
+(4, 'Fragancia natural x4', 'ENVIADO', 14, 47960, 4),
+(5, 'Jabón de coco artesanal', 'ENTREGADO', 15, 39950, 5),
+(1, 'Gel de ducha suave', 'PENDIENTE', 16, 8990, 6),
+(2, 'Velas aromáticas', 'ENVIADO', 17, 31980, 7),
+(1, 'Manteca corporal piel seca', 'ENTREGADO', 18, 13990, 8),
+(2, 'Perfume amaderado x2', 'ENTREGADO', 19, 45980, 9),
+(6, 'Crema de manos para oficina', 'ENVIADO', 20, 41940, 10),
+(1, 'Perfume Aqua clásico', 'ENTREGADO', 1, 19990, 1),
+(1, 'Fragancia Rosé edición limitada', 'PENDIENTE', 4, 17990, 2),
+(2, 'Spray cítrico refrescante', 'ENTREGADO', 3, 19980, 3),
+(3, 'Loción Midnight especial', 'ENVIADO', 2, 44970, 4),
+(1, 'Crema corporal', 'PENDIENTE', 5, 12990, 5),
+(1, 'Set Aromaterapia', 'ENTREGADO', 6, 24990, 6),
+(1, 'Perfume Intense Black', 'ENTREGADO', 7, 21990, 7),
+(3, 'Bruma Lavanda relajante', 'ENVIADO', 8, 32970, 8),
+(1, 'Aceite esencial lavanda', 'ENTREGADO', 9, 13990, 9),
+(1, 'Set Spa Día de la Madre', 'PENDIENTE', 10, 26990, 10),
+(2, 'Perfume Black edición oro', 'ENTREGADO', 11, 37980, 1),
+(2, 'Spray frutal x2', 'ENVIADO', 12, 17980, 2),
+(1, 'Loción Floral Primavera', 'PENDIENTE', 13, 15990, 3),
+(2, 'Fragancia natural suave', 'ENTREGADO', 14, 23980, 4),
+(1, 'Jabón de coco artesanal', 'ENTREGADO', 15, 7990, 5),
+(2, 'Gel de ducha x2', 'ENVIADO', 16, 17980, 6),
+(1, 'Velas aromáticas noche', 'PENDIENTE', 17, 15990, 7),
+(2, 'Manteca corporal piel seca', 'ENTREGADO', 18, 27980, 8),
+(1, 'Perfume amaderado edición deluxe', 'ENVIADO', 19, 22990, 9),
+(3, 'Crema de manos x3', 'PENDIENTE', 20, 20970, 10);
 
--- Producto
+-- 👥 Usuarios en perfulandia_notificacion_01v.usuario
+INSERT INTO perfulandia_notificacion_01v.usuario (nombre) VALUES
+('Carla Rojas'),
+('Pedro Morales'),
+('Lucía Díaz'),
+('Marco Vera'),
+('Ana Espinoza'),
+('Sebastián Torres'),
+('Valentina Núñez'),
+('Ignacio Soto'),
+('Fernanda Reyes'),
+('Camila Fuentes');
 
-INSERT INTO producto (nombre, precio, stock) VALUES ('Laptop Dell XPS 13', 1250.99, 10);
-INSERT INTO producto (nombre, precio, stock) VALUES ('Teclado Mecánico Redragon', 45.50, 25);
-INSERT INTO producto (nombre, precio, stock) VALUES ('Mouse Logitech MX Master 3', 99.99, 15);
-INSERT INTO producto (nombre, precio, stock) VALUES ('Monitor LG UltraWide', 299.99, 12);
-INSERT INTO producto (nombre, precio, stock) VALUES ('SSD Samsung 1TB', 120.00, 20);
-INSERT INTO producto (nombre, precio, stock) VALUES ('Tarjeta Gráfica RTX 3060', 499.99, 8);
-INSERT INTO producto (nombre, precio, stock) VALUES ('Silla Gamer Cougar', 179.00, 10);
-INSERT INTO producto (nombre, precio, stock) VALUES ('Smartphone Samsung Galaxy S21', 899.00, 18);
-INSERT INTO producto (nombre, precio, stock) VALUES ('Tablet Apple iPad 10th Gen', 449.00, 14);
-INSERT INTO producto (nombre, precio, stock) VALUES ('Cámara Canon EOS M50', 649.00, 7);
-INSERT INTO producto (nombre, precio, stock) VALUES ('Audífonos Sony WH-1000XM4', 299.99, 13);
-INSERT INTO producto (nombre, precio, stock) VALUES ('Power Bank Xiaomi 20000mAh', 35.00, 50);
-INSERT INTO producto (nombre, precio, stock) VALUES ('Impresora HP DeskJet 2720', 65.00, 9);
-INSERT INTO producto (nombre, precio, stock) VALUES ('Router TP-Link Archer AX10', 89.00, 11);
-INSERT INTO producto (nombre, precio, stock) VALUES ('Webcam Logitech C920', 79.99, 10);
-INSERT INTO producto (nombre, precio, stock) VALUES ('Auriculares JBL Tune 500', 29.99, 20);
-INSERT INTO producto (nombre, precio, stock) VALUES ('Laptop Lenovo ThinkPad E14', 870.00, 6);
-INSERT INTO producto (nombre, precio, stock) VALUES ('Monitor Samsung Curvo 24"', 159.00, 17);
-INSERT INTO producto (nombre, precio, stock) VALUES ('Cargador USB-C Anker', 25.00, 40);
-INSERT INTO producto (nombre, precio, stock) VALUES ('Case NZXT H510', 69.99, 5);
-INSERT INTO producto (nombre, precio, stock) VALUES ('Disco Duro Externo 2TB Seagate', 75.00, 22);
-INSERT INTO producto (nombre, precio, stock) VALUES ('Tarjeta Madre ASUS B550', 139.00, 7);
-INSERT INTO producto (nombre, precio, stock) VALUES ('Repetidor WiFi TP-Link', 22.00, 30);
-INSERT INTO producto (nombre, precio, stock) VALUES ('Teclado inalámbrico Logitech', 49.99, 18);
-INSERT INTO producto (nombre, precio, stock) VALUES ('Mouse Pad SteelSeries', 19.99, 45);
-INSERT INTO producto (nombre, precio, stock) VALUES ('Kit Raspberry Pi 4', 129.99, 10);
-INSERT INTO producto (nombre, precio, stock) VALUES ('Alexa Echo Dot 5ta Gen', 39.99, 25);
-INSERT INTO producto (nombre, precio, stock) VALUES ('Base Enfriadora para Laptop', 24.99, 27);
-INSERT INTO producto (nombre, precio, stock) VALUES ('Cable HDMI 2.1', 14.50, 60);
-INSERT INTO producto (nombre, precio, stock) VALUES ('Fuente de poder EVGA 600W', 59.99, 8);
-
-
--- Pedido
-
-INSERT INTO pedido (usuario_id, producto_id, cantidad, total) VALUES (1, 5, 2, 500.00);
-INSERT INTO pedido (usuario_id, producto_id, cantidad, total) VALUES (2, 3, 1, 150.00);
-INSERT INTO pedido (usuario_id, producto_id, cantidad, total) VALUES (3, 7, 4, 1200.00);
-INSERT INTO pedido (usuario_id, producto_id, cantidad, total) VALUES (4, 1, 1, 300.00);
-INSERT INTO pedido (usuario_id, producto_id, cantidad, total) VALUES (5, 2, 3, 750.00);
-INSERT INTO pedido (usuario_id, producto_id, cantidad, total) VALUES (6, 6, 5, 2500.00);
-INSERT INTO pedido (usuario_id, producto_id, cantidad, total) VALUES (7, 4, 2, 600.00);
-INSERT INTO pedido (usuario_id, producto_id, cantidad, total) VALUES (8, 3, 1, 150.00);
-INSERT INTO pedido (usuario_id, producto_id, cantidad, total) VALUES (9, 8, 6, 1800.00);
-INSERT INTO pedido (usuario_id, producto_id, cantidad, total) VALUES (10, 5, 2, 500.00);
-
-INSERT INTO pedido (usuario_id, producto_id, cantidad, total) VALUES (11, 1, 1, 300.00);
-INSERT INTO pedido (usuario_id, producto_id, cantidad, total) VALUES (12, 7, 4, 1200.00);
-INSERT INTO pedido (usuario_id, producto_id, cantidad, total) VALUES (13, 2, 3, 750.00);
-INSERT INTO pedido (usuario_id, producto_id, cantidad, total) VALUES (14, 6, 5, 2500.00);
-INSERT INTO pedido (usuario_id, producto_id, cantidad, total) VALUES (15, 4, 2, 600.00);
-INSERT INTO pedido (usuario_id, producto_id, cantidad, total) VALUES (16, 3, 1, 150.00);
-INSERT INTO pedido (usuario_id, producto_id, cantidad, total) VALUES (17, 8, 6, 1800.00);
-INSERT INTO pedido (usuario_id, producto_id, cantidad, total) VALUES (18, 5, 2, 500.00);
-INSERT INTO pedido (usuario_id, producto_id, cantidad, total) VALUES (19, 1, 1, 300.00);
-INSERT INTO pedido (usuario_id, producto_id, cantidad, total) VALUES (20, 7, 4, 1200.00);
-
-INSERT INTO pedido (usuario_id, producto_id, cantidad, total) VALUES (21, 2, 3, 750.00);
-INSERT INTO pedido (usuario_id, producto_id, cantidad, total) VALUES (22, 6, 5, 2500.00);
-INSERT INTO pedido (usuario_id, producto_id, cantidad, total) VALUES (23, 4, 2, 600.00);
-INSERT INTO pedido (usuario_id, producto_id, cantidad, total) VALUES (24, 3, 1, 150.00);
-INSERT INTO pedido (usuario_id, producto_id, cantidad, total) VALUES (25, 8, 6, 1800.00);
-INSERT INTO pedido (usuario_id, producto_id, cantidad, total) VALUES (26, 5, 2, 500.00);
-INSERT INTO pedido (usuario_id, producto_id, cantidad, total) VALUES (27, 1, 1, 300.00);
-INSERT INTO pedido (usuario_id, producto_id, cantidad, total) VALUES (28, 7, 4, 1200.00);
-INSERT INTO pedido (usuario_id, producto_id, cantidad, total) VALUES (29, 2, 3, 750.00);
-INSERT INTO pedido (usuario_id, producto_id, cantidad, total) VALUES (30, 6, 5, 2500.00);
-
-
--- Notificación
-
-
-INSERT INTO notificacion (pedido_id, mensaje, estado) VALUES (1, 'Pedido recibido, en proceso', 'PENDIENTE');
-INSERT INTO notificacion (pedido_id, mensaje, estado) VALUES (2, 'Pedido enviado al cliente', 'ENVIADA');
-INSERT INTO notificacion (pedido_id, mensaje, estado) VALUES (3, 'Error en el procesamiento del pedido', 'ERROR');
-INSERT INTO notificacion (pedido_id, mensaje, estado) VALUES (4, 'Pedido recibido, en proceso', 'PENDIENTE');
-INSERT INTO notificacion (pedido_id, mensaje, estado) VALUES (5, 'Pedido enviado al cliente', 'ENVIADA');
-INSERT INTO notificacion (pedido_id, mensaje, estado) VALUES (6, 'Error en el procesamiento del pedido', 'ERROR');
-INSERT INTO notificacion (pedido_id, mensaje, estado) VALUES (7, 'Pedido recibido, en proceso', 'PENDIENTE');
-INSERT INTO notificacion (pedido_id, mensaje, estado) VALUES (8, 'Pedido enviado al cliente', 'ENVIADA');
-INSERT INTO notificacion (pedido_id, mensaje, estado) VALUES (9, 'Error en el procesamiento del pedido', 'ERROR');
-INSERT INTO notificacion (pedido_id, mensaje, estado) VALUES (10, 'Pedido recibido, en proceso', 'PENDIENTE');
-INSERT INTO notificacion (pedido_id, mensaje, estado) VALUES (11, 'Pedido enviado al cliente', 'ENVIADA');
-INSERT INTO notificacion (pedido_id, mensaje, estado) VALUES (12, 'Error en el procesamiento del pedido', 'ERROR');
-INSERT INTO notificacion (pedido_id, mensaje, estado) VALUES (13, 'Pedido recibido, en proceso', 'PENDIENTE');
-INSERT INTO notificacion (pedido_id, mensaje, estado) VALUES (14, 'Pedido enviado al cliente', 'ENVIADA');
-INSERT INTO notificacion (pedido_id, mensaje, estado) VALUES (15, 'Error en el procesamiento del pedido', 'ERROR');
-INSERT INTO notificacion (pedido_id, mensaje, estado) VALUES (16, 'Pedido recibido, en proceso', 'PENDIENTE');
-INSERT INTO notificacion (pedido_id, mensaje, estado) VALUES (17, 'Pedido enviado al cliente', 'ENVIADA');
-INSERT INTO notificacion (pedido_id, mensaje, estado) VALUES (18, 'Error en el procesamiento del pedido', 'ERROR');
-INSERT INTO notificacion (pedido_id, mensaje, estado) VALUES (19, 'Pedido recibido, en proceso', 'PENDIENTE');
-INSERT INTO notificacion (pedido_id, mensaje, estado) VALUES (20, 'Pedido enviado al cliente', 'ENVIADA');
-INSERT INTO notificacion (pedido_id, mensaje, estado) VALUES (21, 'Error en el procesamiento del pedido', 'ERROR');
-INSERT INTO notificacion (pedido_id, mensaje, estado) VALUES (22, 'Pedido recibido, en proceso', 'PENDIENTE');
-INSERT INTO notificacion (pedido_id, mensaje, estado) VALUES (23, 'Pedido enviado al cliente', 'ENVIADA');
-INSERT INTO notificacion (pedido_id, mensaje, estado) VALUES (24, 'Error en el procesamiento del pedido', 'ERROR');
-INSERT INTO notificacion (pedido_id, mensaje, estado) VALUES (25, 'Pedido recibido, en proceso', 'PENDIENTE');
-INSERT INTO notificacion (pedido_id, mensaje, estado) VALUES (26, 'Pedido enviado al cliente', 'ENVIADA');
-INSERT INTO notificacion (pedido_id, mensaje, estado) VALUES (27, 'Error en el procesamiento del pedido', 'ERROR');
-INSERT INTO notificacion (pedido_id, mensaje, estado) VALUES (28, 'Pedido recibido, en proceso', 'PENDIENTE');
-INSERT INTO notificacion (pedido_id, mensaje, estado) VALUES (29, 'Pedido enviado al cliente', 'ENVIADA');
-INSERT INTO notificacion (pedido_id, mensaje, estado) VALUES (30, 'Error en el procesamiento del pedido', 'ERROR');
-
+-- 🔔 Notificaciones en perfulandia_notificacion_01v.notificacion
+INSERT INTO perfulandia_notificacion_01v.notificacion (estado, mensaje, pedido_id, usuario_id) VALUES
+('ENVIADA', 'Pedido recibido correctamente', 1, 1),
+('ERROR', 'Error al procesar el pago', 2, 2),
+('PENDIENTE', 'Pedido pendiente de envío', 3, 3),
+('ENVIADA', 'Tu pedido ha sido enviado', 4, 4),
+('ERROR', 'Fallo en el sistema logístico', 5, 5),
+('ENVIADA', 'Pedido confirmado', 6, 6),
+('PENDIENTE', 'A la espera de confirmación', 7, 7),
+('ENVIADA', 'Envío programado para mañana', 8, 8),
+('ERROR', 'Dirección no válida', 9, 9),
+('ENVIADA', 'Pedido entregado con éxito', 10, 10);

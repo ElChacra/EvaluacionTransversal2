@@ -2,6 +2,8 @@ package com.perfulandia.notificacionservice.controller;
 
 import com.perfulandia.notificacionservice.model.Notificacion;
 import com.perfulandia.notificacionservice.service.NotificacionService;
+import com.perfulandia.notificacionservice.dto.NotificacionDTO; // Importa el DTO
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -34,5 +36,17 @@ public class NotificacionController {
     @DeleteMapping("/{id}")
     public void eliminar(@PathVariable Long id) {
         service.eliminar(id);
+    }
+
+    @GetMapping("/usuario/{usuarioId}")
+    public List<Notificacion> listarPorUsuario(@PathVariable Long usuarioId) {
+        return service.listarPorUsuario(usuarioId);
+    }
+
+    // Nuevo endpoint para crear notificación con DTO
+    @PostMapping("/dto")
+    public ResponseEntity<NotificacionDTO> guardarConDTO(@RequestBody NotificacionDTO notificacionDTO) {
+        NotificacionDTO dtoGuardado = service.guardarConDTO(notificacionDTO);
+        return ResponseEntity.ok(dtoGuardado);
     }
 }

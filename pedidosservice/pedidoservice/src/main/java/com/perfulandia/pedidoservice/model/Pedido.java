@@ -20,7 +20,9 @@ public class Pedido {
     private Long id;
 
     private Long usuarioId;
-    private Long productoId;
-    private int cantidad;
-    private double total;
+    private Long productoId;     // <- este campo es necesario
+    private Integer cantidad;    // <- este también
+    private String estado;
+    private String descripcion;
+    private Double total;
 }
