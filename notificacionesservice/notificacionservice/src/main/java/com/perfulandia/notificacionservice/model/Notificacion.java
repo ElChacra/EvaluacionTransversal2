@@ -14,14 +14,14 @@ import lombok.NoArgsConstructor;
 public class Notificacion {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY) // ID autoincremental
     private Long id;
 
-    private Long pedidoId;
-    private String mensaje;
-    private String estado; // ENVIADA, ERROR, PENDIENTE
+    private Long pedidoId; // ID del pedido relacionado
+    private String mensaje; // Contenido de la notificación
+    private String estado; // ENVIADA, PENDIENTE, ERROR
 
-    @ManyToOne
-    @JoinColumn(name = "usuario_id", nullable = false)
+    @ManyToOne // Muchas notificaciones pueden pertenecer a un usuario
+    @JoinColumn(name = "usuario_id", nullable = false) // Clave foránea obligatoria
     private Usuario usuario;
 }

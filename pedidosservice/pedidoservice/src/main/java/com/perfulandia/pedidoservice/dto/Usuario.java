@@ -7,9 +7,9 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Usuario {
-    private long id;
-    private String nombre;
-    private String correo;
-    private String rol;
+public class Usuario { // Clase que representa un usuario (podría venir del microservicio de usuarios)
+    private long id; // ID del usuario
+    private String nombre; // Nombre del usuario
+    private String correo; // Correo del usuario
+    private String rol; // Rol del usuario (ej. 'cliente', 'admin')
 }

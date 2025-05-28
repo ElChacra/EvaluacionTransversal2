@@ -5,16 +5,13 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-/**
- * DTO que mapea la respuesta de NotificacionService
- */
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
 public class NotificacionDTO {
-    private Long id;
-    private Long pedidoId;
-    private String mensaje;
-    private String estado;  // p.ej. "ENVIADA", "ERROR", "PENDIENTE"
+    private Long id; // ID de la notificación
+    private Long pedidoId; // ID del pedido
+    private String mensaje; // Contenido del mensaje
+    private String estado; // Estado de la notificación
 }
