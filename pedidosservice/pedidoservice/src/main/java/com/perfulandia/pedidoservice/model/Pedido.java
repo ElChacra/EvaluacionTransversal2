@@ -14,15 +14,15 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class Pedido {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+public class Pedido { // Clase que representa la tabla "pedido" en la base de datos
+    @Id // Campo ID primario
+    @GeneratedValue(strategy = GenerationType.IDENTITY) // El ID se genera automáticamente (autoincremental)
+    private Long id; // ID del pedido
 
-    private Long usuarioId;
-    private Long productoId;     // <- este campo es necesario
-    private Integer cantidad;    // <- este también
-    private String estado;
-    private String descripcion;
-    private Double total;
+    private Long usuarioId; // ID del usuario que hizo el pedido
+    private Long productoId; // ID del producto comprado
+    private Integer cantidad; // Cantidad del producto en el pedido
+    private String estado; // Estado del pedido (ej. pendiente, enviado)
+    private String descripcion; // Descripción del pedido
+    private Double total; // Total monetario del pedido
 }

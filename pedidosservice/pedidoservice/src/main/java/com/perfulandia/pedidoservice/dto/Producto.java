@@ -7,9 +7,9 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Producto {
-    private long id;
-    private String nombre;
-    private double precio;
-    private int stock;
+public class Producto { // Clase que representa un producto (podría venir del microservicio de productos)
+    private long id; // ID del producto
+    private String nombre; // Nombre del producto
+    private double precio; // Precio del producto
+    private int stock; // Cantidad en stock
 }
