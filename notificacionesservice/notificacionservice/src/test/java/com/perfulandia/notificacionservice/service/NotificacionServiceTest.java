@@ -4,17 +4,12 @@ import com.perfulandia.notificacionservice.model.Notificacion;
 import com.perfulandia.notificacionservice.repository.NotificacionRepository;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-
-//Librerías necesarias para Mockito
 import org.mockito.*;
 import java.util.List;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
 
-
 public class NotificacionServiceTest {
-    //Crea una instancia de NotificacionService e inyecta 'Mocks' dpmde sea necesario
-    //Mocks = Simulacion
     @InjectMocks
     private NotificacionService notificacionService;
 
@@ -30,6 +25,6 @@ public class NotificacionServiceTest {
         when(notificacionRepo.findAll()).thenReturn(List.of(new Notificacion(1L, 1L, "Testeando Notificacion", "ENVIADO", null)));
         List<Notificacion> resultado = notificacionService.listar();
         assertEquals(1, resultado.size());
+        verify(notificacionRepo).findAll();
     }
-
 }

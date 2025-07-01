@@ -25,5 +25,6 @@ public class PedidoServiceTest {
         when(pedidoRepo.findAll()).thenReturn(List.of(new Pedido(1L, 2L, 3L, 5, "PENDIENTE", "Pedido Test", 15000.0)));
         List<Pedido> resultado = pedidoService.listar();
         assertEquals(1, resultado.size());
+        verify(pedidoRepo).findAll();
     }
 }

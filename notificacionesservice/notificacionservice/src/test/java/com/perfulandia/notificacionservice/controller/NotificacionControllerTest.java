@@ -32,4 +32,10 @@ public class NotificacionControllerTest {
                 .andExpect(jsonPath("$.mensaje").value("msg"))
                 .andExpect(jsonPath("$.estado").value("ENVIADO"));
     }
+    @Test
+    void testDeleteNotificacion() throws Exception {
+        doNothing().when(notificacionService).eliminar(1L);
+        mockMvc.perform(delete("/api/notificaciones/1"))
+                .andExpect(status().isOk());
+    }
 }

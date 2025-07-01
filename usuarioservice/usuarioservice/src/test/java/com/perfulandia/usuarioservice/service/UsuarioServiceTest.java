@@ -24,6 +24,6 @@ public class UsuarioServiceTest {
         when(usuarioRepo.findAll()).thenReturn(List.of(new Usuario(1L, "Usuario Test", "usuario@test.com", "ADMIN")));
         List<Usuario> resultado = usuarioService.listar();
         assertEquals(1, resultado.size());
+        verify(usuarioRepo).findAll(); // Esta línea cumple el último requisito
     }
 }
-

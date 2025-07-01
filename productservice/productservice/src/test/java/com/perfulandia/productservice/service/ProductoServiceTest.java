@@ -1,7 +1,5 @@
 package com.perfulandia.productservice.service;
 
-
-
 import com.perfulandia.productservice.model.Producto;
 import com.perfulandia.productservice.repository.ProductoRepository;
 import org.junit.jupiter.api.DisplayName;
@@ -27,5 +25,6 @@ public class ProductoServiceTest {
         when(productoRepo.findAll()).thenReturn(List.of(new Producto(1L, "Producto Test", 999.99, 100)));
         List<Producto> resultado = productoService.listar();
         assertEquals(1, resultado.size());
+        verify(productoRepo).findAll();
     }
 }
