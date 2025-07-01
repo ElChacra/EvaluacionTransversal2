@@ -224,60 +224,19 @@ curl http://localhost:8083/api/notificaciones
 * [Lombok](https://projectlombok.org/)
 
 
----
 
-## 🌳 Gestión de ramas (branch) en Git
-
-Para trabajar de forma ordenada y en equipo, es recomendable crear y moverse entre ramas de desarrollo, features, y fixes.
-Aquí tienes los comandos más usados:
-
-### 🔀 Cambiar de rama existente
-
-```bash
-git checkout nombre-del-branch
-```
-
-Ejemplo:
-
-```bash
-git checkout develop
-```
-
-### 🌱 Crear una nueva rama y cambiarte a ella
-
-```bash
-git checkout -b nombre-nuevo-branch
-```
-
-Ejemplo para una nueva feature:
-
-```bash
-git checkout -b feature/swagger-docs
-```
-
-### ⏬ Actualizar la rama local con cambios remotos
-
-```bash
-git pull origin nombre-del-branch
-```
-
-### ⬆️ Subir tu nueva rama al repositorio remoto
-
-```bash
-git push origin nombre-nuevo-branch
-```
-
-### 🔄 Listar todas las ramas (locales y remotas)
-
-```bash
-git branch           # ramas locales
-git branch -r        # ramas remotas
-```
 
 ---
 
-**Consejo:**
-Siempre verifica en qué rama estás (`git branch` o mira el prompt de tu terminal), y asegúrate de hacer `pull` antes de comenzar a trabajar.
+### 🔄 Cambiar entre ramas de desarrollo
+
+```bash
+# Cambiar a la rama de Swagger/OpenAPI
+git checkout features/swagger
+
+# Cambiar a la rama de HATEOAS
+git checkout features/hateoas
+```
 
 ---
 
