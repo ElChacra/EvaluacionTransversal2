@@ -36,7 +36,7 @@ public class NotificacionService {
         return repo.findByUsuarioId(usuarioId);
     }
 
-    // Nuevo método para guardar notificación desde DTO
+
     public NotificacionDTO guardarConDTO(NotificacionDTO dto) {
         Notificacion notificacion = new Notificacion();
         notificacion.setPedidoId(dto.getPedidoId());
